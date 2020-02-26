@@ -25,8 +25,6 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   // get a snapshot of the data returned by userRed
   const snapShot = await userRef.get();
 
-  console.log(snapShot);
-
   // if there is a snapshot (exists: true)
   if (!snapShot.exists) {
     // get the displayName and email from the userAuth and a date
