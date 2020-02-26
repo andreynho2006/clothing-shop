@@ -20,9 +20,12 @@ class App extends React.Component {
 
   unsubscribeFromAuth = null;
 
+  // after the components has mount
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+      // if there is a user sign in
       if (userAuth) {
+        // call method to create a new user profile
         const userRef = await createUserProfileDocument(userAuth);
 
         userRef.onSnapshot(snapShot => {
