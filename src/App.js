@@ -20,6 +20,7 @@ class App extends React.Component {
   // after the components has mount
   componentDidMount() {
     const { setCurrentUser } = this.props;
+
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       // if there is a user sign in
       if (userAuth) {
