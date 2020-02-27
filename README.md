@@ -8,6 +8,6 @@ You can:
 - register a user;
 - login/logout a user/sign in with Google
 - add items to cart;
--increase/decrease items from cart;
--remove items from cart;
--make payment withStripe(test)
+- increase/decrease items from cart;
+- remove items from cart;
+- make payment withStripe(test)
