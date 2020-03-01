@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CustomButton from '../custom-button/custom-button.compopnent';
+import CustomButton from '../custom-button/custom-button.component';
 export const CollectionItemComponent = styled.div`
   width: 22vw;
   display: flex;
