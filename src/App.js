@@ -12,11 +12,11 @@ import Header from './components/header/header.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import {
   auth,
-  createUserProfileDocument,
-  addCollectionAndDocuments
+  createUserProfileDocument
+  //addCollectionAndDocuments
 } from './firebase/firebase.utils';
 import { selectCurrentUser } from './redux/user/user.selectors';
-import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
+//import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
 import { createStructuredSelector } from 'reselect';
 
 class App extends React.Component {
@@ -24,7 +24,7 @@ class App extends React.Component {
 
   // after the components has mount
   componentDidMount() {
-    const { setCurrentUser, collectionsArray } = this.props;
+    const { setCurrentUser } = this.props;
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       // if there is a user sign in
