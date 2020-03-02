@@ -11,3 +11,4 @@ You can:
 - increase/decrease items from cart;
 - remove items from cart;
 - make payment withStripe(test)
+- use redux-saga
