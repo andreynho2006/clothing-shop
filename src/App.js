@@ -10,13 +10,8 @@ import ShopPage from './pages/shop/shop.component';
 import CheckoutPage from './pages/checkout/checkout.component';
 import Header from './components/header/header.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
-import {
-  auth,
-  createUserProfileDocument
-  //addCollectionAndDocuments
-} from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { selectCurrentUser } from './redux/user/user.selectors';
-//import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
 import { createStructuredSelector } from 'reselect';
 
 class App extends React.Component {
@@ -40,10 +35,6 @@ class App extends React.Component {
         });
       }
       setCurrentUser(userAuth);
-      // addCollectionAndDocuments(
-      //   'collections',
-      //   collectionsArray.map(({ title, items }) => ({ title, items }))
-      // );
     });
   }
 
